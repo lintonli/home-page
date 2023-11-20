@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  margin: 4% 10%;
+}
+
+.logo img {
+  width: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+
+nav a {
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+nav a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.content {
+  display: grid;
+  gap: 20px;
+  height: 95vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "one one two"
+  "three four two"
+  "five six seven"
+  ;
+}
+
+.one {
+  grid-area: one;
+}
+
+.one img {
+  width: 100%;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 10%;
+  background-color: hsl(240, 100%, 5%);
+  color: #fff;
+  grid-area: two;
+}
+  .two .section {
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    padding-bottom: 30px;
+  }
+  .two h2 {
+  color: hsl(35, 77%, 62%);
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 2rem;
+  }
+  .two h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .two p {
+    font-size: .7rem;
+    line-height: 1.2rem;
+    color: hsl(233, 8%, 79%);
+  }
+  .two .even {
+  color: hsl(35, 77%, 62%);
+  }
+
+.three {
+  grid-area: three; 
+}
+  .three h1 {
+    font-weight: 900;
+  }
+
+.four {
+  grid-area: four;
+}
+  .four p {
+    color: hsl(0, 0%, 49%);
+    font-size: .7rem;
+    margin-bottom: 10px;
+  }
+  .four button {
+    color: fff;
+    background-color: rgb(189, 87, 87);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+  }
+
+.number {
+  color: hsl(236, 13%, 42%);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.five {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  grid-area: five;
+}
+  .five img {
+    width: 50px;
+    height: 100%;
+  }
+  .five h4 {
+    color: hsl(240, 100%, 5%);
+  }
+
+.six {
+  display: flex;
+  align-items: center;
+  grid-area: six;
+  padding: 10px;
+}
+  .six img {
+    width: 60px;
+    height: 100%;
+  }
+  .six h4 {
+    color: hsl(240, 100%, 5%);
+  }
+
+.seven {
+  display: flex;
+  align-items: center;
+  grid-area: seven;
+  padding: 10px;
+}
+  .seven img {
+    width: 60px;
+    height: 100%;
+  }
+  .seven h4 {
+    color: hsl(240, 100%, 5%);
+  }
